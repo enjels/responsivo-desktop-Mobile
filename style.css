@@ -74,6 +74,10 @@ h1{
     gap: 3.8rem;
  }
 
+ ul li + li{
+    margin-top: 3.2rem;
+}
+
  ul li span{
     font-weight: 800;
     font-size: 7.2rem;
@@ -83,8 +87,23 @@ h1{
 
 }
 /* media queries */
-@media (min-width:40em){
+@media (min-width:1020px){
     body{
-        background-color: black;
+        padding: 8rem;
     }
+    main{
+        max-width: 90%;
+        display: flex;
+        gap: 10rem;
+    }
+    main > div{
+        max-width: 484;
+    }
+
+    ul li{
+        max-width: 700px;
+        gap: 5.3rem;
+        align-items: center;
+    }
+    
 }
